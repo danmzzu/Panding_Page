@@ -1,0 +1,42 @@
+.about {
+    width: 100%;
+    min-height: 350px;
+    border-radius: 20px;
+    border: var(--border);
+    background-color: #fff;
+    box-shadow: var(--shadow);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: var(--border);
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: var(--shadow);
+}
+
+.about div h1 {
+    color: #fff;
+    font-size: clamp(1.6rem, 4vw, 1.8rem);
+    text-shadow: 1px 1px 15px #444;
+}
+
+.about div p {
+    max-width: 50%;
+    color: #ddd;
+    font-size: clamp(13px, 2vw, 15px);
+    text-shadow: 1px 1px 15px #444;
+}
+
+@media all and (max-width: 1200px) {
+    .about div p { max-width: inherit; }
+}
