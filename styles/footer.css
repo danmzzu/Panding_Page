@@ -27,6 +27,10 @@
     text-decoration: underline;
 }
 
+.footer div small {
+    color: #999;
+}
+
 @media all and (max-width: 600px) {
     .footer { 
         margin: 30px auto; 
