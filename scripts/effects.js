@@ -1,4 +1,3 @@
-// Fade In Cards
 document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.about, .service, .feedback, .gallery, .social, .contact, .footer, .category');
     let lastScrollY = window.scrollY;

@@ -1,0 +1,22 @@
+.floating-menu {
+    position: fixed;
+    z-index: 5;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 15px;
+    border-radius: 15px 0 0 15px;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+}
+
+.floating-menu a i,
+.floating-menu a:visited i {
+    font-size: clamp(1.5rem, 4vw, 1.7rem);
+}
+
+.floating-menu i.bi-whatsapp { color: #128c7e !important; }
+.floating-menu i.bi-instagram { color: #c13584 !important; }
