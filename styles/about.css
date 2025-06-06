@@ -80,6 +80,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        text-align: center;
     }
     .about > div > .about-image { 
         width: 100%;
