@@ -3,7 +3,7 @@
 .footer div:first-child {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 15px;
     row-gap: 5px;
     flex-wrap: wrap;
 }
@@ -16,10 +16,14 @@
     padding-left: 30px;
 }
 
-.footer div a {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
+.footer div a,
+.footer div a:visited {
+    color: #0a66c2;
+}
+
+.footer div a:hover,
+.footer div a:active {
+    text-decoration: underline;
 }
 
 @media all and (max-width: 600px) {
