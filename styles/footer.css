@@ -1,4 +1,7 @@
-.footer { margin: 30px auto; }
+.footer { 
+    opacity: 0;
+    margin: 30px auto; 
+}
 
 .footer div:first-child {
     display: flex;
