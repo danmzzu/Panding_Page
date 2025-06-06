@@ -44,8 +44,11 @@
         <link rel="stylesheet" href="styles/social.css">
         <link rel="stylesheet" href="styles/gallery.css">
         <link rel="stylesheet" href="styles/contact.css">
+        <link rel="stylesheet" href="styles/footer.css">
 
         <!-- Scripts -->
+        <script defer src="scripts/security.js"></script>
+        <script defer src="scripts/links.js"></script>
         <script defer src="scripts/contact.js"></script>
         <script defer src="scripts/phone_mask.js"></script>
     </head>
@@ -53,7 +56,7 @@
 
         <!-- Main -->
         <main class="wrapper">
-            <section> <!-- About -->
+            <section id="about"> <!-- About -->
                 <div class="grid g-1">
                     <div class="about" style="background-image: url('https://media.istockphoto.com/id/1399395748/pt/foto/cheerful-business-woman-with-glasses-posing-with-her-hands-under-her-face-showing-her-smile-in.jpg?s=612x612&w=0&k=20&c=V2hdZm-cPTPXYT4U7VEsXr9M4CR3QqxOCMY_2qqJQAI=');">
                         <div>
@@ -67,7 +70,7 @@
                 </div>
             </section>
 
-            <section> <!-- Services -->
+            <section id="services"> <!-- Services -->
                 <div class="category">Serviços</div>
                 <div class="grid g-3">
                     <div class="service">
@@ -115,7 +118,7 @@
                 </div>
             </section>
 
-            <section> <!-- Feedbacks -->
+            <section id="feedbacks"> <!-- Feedbacks -->
                 <div class="category">Avaliações</div>
                 <div class="grid g-3">
                     <div class="feedback">
@@ -205,7 +208,7 @@
                 </div>
             </section>
 
-            <section> <!-- Gallery -->
+            <section id="gallery"> <!-- Gallery -->
                 <div class="category">Ambiente</div>
                 <div class="grid g-3">
                     <div class="gallery" style="background-image: url('https://s2-casaejardim.glbimg.com/oR5-I6mOgi6FwBu4pear-JK_NBo=/0x0:1400x933/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_a0b7e59562ef42049f4e191fe476fe7d/internal_photos/bs/2023/E/6/wZ9QPJSgWZ7VL0C2YH5A/3-consultorio-simara-mello.jpg');"></div>
@@ -214,7 +217,7 @@
                 </div>
             </section>
 
-             <section> <!-- Socials -->
+             <section id="social"> <!-- Socials -->
                 <div class="category">Social</div>
                 <div class="grid g-4">
                     <div class="social">
@@ -295,6 +298,41 @@
                 </div>
             </form>
         </main>
+
+        <!-- Footer -->
+        <footer class="wrapper footer">
+            <section class="grid g-2 gap-15" role="contentinfo" aria-label="Rodapé do site">
+                <div aria-label="Links úteis">
+                    <a href="#" title="Retorne ao início do site">
+                        <i class="bi bi-link-45deg" aria-hidden="true"></i>Início
+                    </a>
+                    <a href="#about" title="Saiba um pouco sobre a L009">
+                        <i class="bi bi-link-45deg" aria-hidden="true"></i>Sobre
+                    </a>
+                    <a href="#services" title="Conheça nossos serviços">
+                        <i class="bi bi-link-45deg" aria-hidden="true"></i>Serviços
+                    </a>
+                    <a href="#feedbacks" title="Veja nossas avaliações">
+                        <i class="bi bi-link-45deg" aria-hidden="true"></i>Avaliações
+                    </a>
+                    <a href="#social" title="Tenha acesso a nossas redes sociais">
+                        <i class="bi bi-link-45deg" aria-hidden="true"></i>Social
+                    </a>
+                    <a href="#contact" title="Fale conosco pelo nosso formulário">
+                        <i class="bi bi-link-45deg" aria-hidden="true"></i>Contato
+                    </a>
+                    <a href="pages/policy.html" title="Leia nossa política de privacidade">
+                        <i class="bi bi-link-45deg" aria-hidden="true"></i>Políticas de privacidade
+                    </a>
+                    <a href="pages/terms.html" title="Veja os termos de uso">
+                        <i class="bi bi-link-45deg" aria-hidden="true"></i>Termos de uso
+                    </a>
+                </div>
+                <div aria-label="Informações CEO">
+                    <small>&copy L009 - Elaborado e desenvolvido por Daniel Mazzeu.<br>Todos direitos reservados <span id="current-year"></span>.</small>
+                </div>
+            </section>
+        </footer>
 
     </body>
 </html>

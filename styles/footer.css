@@ -1,0 +1,36 @@
+.footer { margin: 30px auto; }
+
+.footer div:first-child {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    row-gap: 5px;
+    flex-wrap: wrap;
+}
+
+.footer div:last-child {
+    display: flex;
+    align-items: flex-start;
+    justify-content: end;
+    text-align: right;
+    padding-left: 30px;
+}
+
+.footer div a {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+@media all and (max-width: 600px) {
+    .footer { 
+        margin: 30px auto; 
+        padding: 0 15px; 
+    }
+    .footer div:first-child { justify-content: center; }
+    .footer div:last-child {
+        justify-content: center;
+        text-align: center;
+        padding-left: inherit;
+    }
+}
