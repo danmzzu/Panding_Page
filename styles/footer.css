@@ -18,11 +18,12 @@
 
 .footer div a,
 .footer div a:visited {
-    color: #0a66c2;
+    color: #000;
 }
 
 .footer div a:hover,
 .footer div a:active {
+    color: #0a66c2;
     text-decoration: underline;
 }
 
