@@ -1,7 +1,7 @@
 .contact {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     width: 100%;
     border-radius: 20px;
     border: var(--border);
@@ -35,4 +35,11 @@
     background-color: #ccc;
 }
 
-.contact .error { display: none; }
+.contact .error { 
+    display: none;
+    width: 100%;
+    padding: 10px;
+    border: 1px dashed #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
