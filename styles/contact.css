@@ -1,0 +1,38 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    border-radius: 20px;
+    border: var(--border);
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+}
+
+.contact input, 
+.contact textarea,
+.contact button {
+    width: 100%;
+    padding: 10px;
+    border: var(--border);
+    border-radius: 10px;
+}
+
+.contact textarea {
+    resize: none;
+    height: 150px;
+}
+
+.contact button { 
+    width: fit-content;
+    cursor: pointer;
+    color: #fff;
+    background-color: #000;
+}
+
+.contact button:disabled {
+    background-color: #ccc;
+}
+
+.contact .error { display: none; }

@@ -1,0 +1,25 @@
+.service {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    border-radius: 20px;
+    border: var(--border);
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+}
+
+.service > div {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service > div > i {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px dashed #ccc;
+}
