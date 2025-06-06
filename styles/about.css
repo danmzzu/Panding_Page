@@ -10,7 +10,8 @@
     background-size: cover;
 }
 
-.about div {
+.about > div {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,19 +25,70 @@
     box-shadow: var(--shadow);
 }
 
-.about div h1 {
+.about > div h1 {
     color: #fff;
     font-size: clamp(1.6rem, 4vw, 1.8rem);
     text-shadow: 1px 1px 15px #444;
 }
 
-.about div p {
+.about > div p {
     max-width: 50%;
     color: #ddd;
     font-size: clamp(13px, 2vw, 15px);
     text-shadow: 1px 1px 15px #444;
 }
 
+.about > div > .about-image {
+    position: absolute;
+    right: 15px;
+    width: 450px;
+    height: auto;
+}
+
+.about > div > .about-image img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    transform: rotate(10deg);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+
+.about > div > .about-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transform: rotate(5deg);
+    background-color: #999;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+
 @media all and (max-width: 1200px) {
-    .about div p { max-width: inherit; }
+    .about > div > .about-image { width: 350px; }
+}
+
+@media all and (max-width: 800px) {
+    .about > div { 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .about > div > .about-image { 
+        width: 100%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .about > div p { max-width: inherit; }
 }
