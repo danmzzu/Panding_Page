@@ -63,9 +63,9 @@ contactForm.addEventListener('submit', async function(event) {
         `;
 
         const emailData = {
-            Brand: "L009",
+            Brand: "Landing Page",
             To: "danmzzu@gmail.com",
-            Subject: `L009 - Novo Contato: ${contactSubject}`,
+            Subject: `Landing Page - Novo Contato: ${contactSubject}`,
             Message: fullMessage,
             html: true
         };
